@@ -1,0 +1,37 @@
+.App {
+  background:#d3b177; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* top header */
+.header {
+  height: 4rem;
+  width: 100%;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  /*padding:0 1rem;*/
+  background: rgb(255,255,255,0.3);
+}
+
+/* pie logo (probably change lol) */
+.logo {
+  height: 3rem;
+  width: 3rem;
+  background: url('https://lh3.googleusercontent.com/4K_v12knh07w4rW-SCjxkrq6Lsb9014CPvw7tIc_a0TzvxTjKqp6Q4xl3tj0W4iBSuoYyRKF247EbhMe7JaZc6roXARymZE8WEMLO003HgeXY0S4OmCVPbT3xFSltQad5jWzHw3Bdw=w2400');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+}
+
+.title {
+  color: rgb(70, 42, 11);
+  font-weight: 520;
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

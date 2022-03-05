@@ -118,7 +118,7 @@
   margin-left: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
-  font-size: 90%;
+  font-size: 90%;  
 }
 
 .ideas{
@@ -129,4 +129,8 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
   font-size: 80%;
+}
+
+.info-button {
+  margin-left: .6rem;
 }

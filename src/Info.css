@@ -1,0 +1,106 @@
+.info-content-box {
+  width: 35rem;
+  height: 50rem;
+  background: rgb(255,255,255,0.3);
+  overflow-wrap: normal;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: space-between;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+.info-loc-img {
+  /* background-size: contain; */
+  /* width: 35rem; */
+  /* height: 25rem; */
+  /* margin-top: 2rem; */
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  /* align-items: flex-end; */
+  /* margin-left: 150px; */
+
+  position: relative;
+  width: 500px;
+  /* padding: 20px; */
+  max-width: 85vh;
+  height: 50vh;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  margin: 1rem;
+  display: flex;
+  align-self: center;
+}
+
+.info-loc-name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  margin-left: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.info-info {
+  width: 30rem;
+  height: 30rem;
+  background: rgba(0, 0, 0, 0.03);
+  margin-left: 45px;
+  margin-top: 1rem;
+  margin-bottom: .8rem;
+  border-radius: 1rem;
+}
+
+.info-loc-title{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(70, 42, 11);
+  margin-left: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  padding: none;
+}
+
+.info-dis{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(70, 42, 11);
+  margin-left: .1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 30%;
+}
+
+.info-des{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(70, 42, 11);
+  margin-left: 1rem;
+  margin-right: .3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 80%;
+  font-style: italic;
+}
+
+.info-visit{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(70, 42, 11);
+  margin-left: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 90%;  
+}
+
+.info-ideas{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(70, 42, 11);
+  margin-left: 1rem;
+  margin-right: .3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 80%;
+}
+
+.i-icon{
+  margin-left: .5rem;
+}

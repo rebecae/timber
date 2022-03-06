@@ -12,32 +12,32 @@ function Info() {
         <div className='logo' />
       </header>
 
-      <div className='content-box'>
-        <div className='loc-img'>
-          <div className='loc-name'> 
+      <div className='info-content-box'>
+        <div className='info-loc-img'>
+          <div className='info-loc-name'> 
             <p> <br/>
             
             </p>
           </div>
         </div> 
-        <div className='info'>
-          <p className='loc-title'>
+        <div className='info-info'>
+          <p className='info-loc-title'>
               Granite Falls, WA   
-              <span className='dis'>41.6 mi away</span>
+              <span className='info-dis'>41.6 mi away</span>
 
           </p>
 
-          <p className='des'>
+          <p className='info-des'>
           Granite Falls is a city in Snohomish County, Washington, United States. 
           It is located between the Pilchuck and Stillaguamish rivers in the western 
           foothills of the Cascade Range, northeast of Lake Stevens and Marysville.
           </p>
 
-          <p className='visit'>
+          <p className='info-visit'>
             Places to Visit
           </p>
 
-          <p className='ideas'>
+          <p className='info-ideas'>
           •  Big Four Ice Caves<br />
           <br />
           •  Heather Lake Trail<br />

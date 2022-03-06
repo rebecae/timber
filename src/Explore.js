@@ -1,12 +1,16 @@
 import React from "react";
 import "./Explore.css";
-import {GrCircleInformation} from "react-icons/gr";
 import { FaTimesCircle } from "react-icons/fa";
 import { IoHeartCircle } from "react-icons/io5";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
+import { IconContext } from "react-icons";
+import TinderCards from './TinderCards';
+// import swipe from 'react-tinder-card';
+// import {useRef} from 'react';
  
 function Explore() {
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
+
   return (
     <div className="App">
       <header className='header'> 
@@ -14,29 +18,20 @@ function Explore() {
         <div className='logo' />
       </header>
 
-      <div className='content-box'>
-        <div className='loc-img'>
-          <div className='loc-name'> 
-            <p> 
-              Granite Falls, WA
-
-              <button className="info-button"
-                onClick={() => {
-                  navigate('/info');
-                }}
-              >
-                <GrCircleInformation  style={{height:20, width:20}} />
-              </button><br/>
-              
-              <span className='dis'>41.6 mi away</span>
-            </p>
-          </div>
-        </div> 
+      <div className='explore-content-box'>
+        <TinderCards />
 
         <div className="like-dislike" >
-          <FaTimesCircle  style={{height:100, width:100}}/>
-          <IoHeartCircle  style={{height:120, width:120}}/>
-
+          <IconContext.Provider value={{ color: 'SaddleBrown' }}>
+            <button 
+              className="dislike"
+            >
+                <FaTimesCircle  style={{height:100, width:100}}/>
+            </button>
+            <button className="like">
+                <IoHeartCircle  style={{height:120, width:120}}/>
+            </button>
+          </IconContext.Provider>
         </div>
       </div>
     </div>

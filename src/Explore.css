@@ -1,7 +1,7 @@
-.explore-content-box{
+.explore-content-box {
   width: 38rem;
   height: 50rem;
-  background: rgb(255,255,255,0.3);
+  background: rgb(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -11,17 +11,13 @@
 }
 
 .like-dislike {
-  /* display: flex; */
-  /* justify-content: space-evenly; */
-  /* align-items: center; */
-  /* margin-top: 30rem; */
-  position : fixed; 
+  position: fixed;
   bottom: 5vh;
   display: flex;
-  width: 30%; 
+  width: 30%;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
 }
 
 .loc-img {
@@ -65,4 +61,23 @@
   border: transparent;
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
   cursor: pointer;
+}
+
+.title {
+  margin-left: 3.4rem;
+}
+
+.logo {
+  margin-left: 2rem;
+}
+
+.message {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 14.5rem;
+  color: saddlebrown;
+  font-weight: 590;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
 }

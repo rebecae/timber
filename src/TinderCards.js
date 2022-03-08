@@ -12,6 +12,7 @@ function TinderCards() {
   let navigate = useNavigate();
   const [places, setPlace] = useState([]);
 
+  // Iterating through firestore database and storing in array
   useEffect(() => {
     database.collection('places').onSnapshot(snapshot => (
       setPlace(snapshot.docs.map(doc => doc.data()))
@@ -22,6 +23,7 @@ function TinderCards() {
   return (
     <div>
       <div className="card-container">
+        {/* Making Tinder card for each location in database array */}
         {places.map((place) => (
           <TinderCard
             className="swipe"
@@ -34,6 +36,7 @@ function TinderCards() {
             >
               <h3>
                 <span className="place-name">{place.loc}</span>
+                {/* clickable information button */}
                 <button
                   className="i-button"
                   onClick={() => {
@@ -45,6 +48,7 @@ function TinderCards() {
                   </IconContext.Provider>
                 </button>
                 <br />
+                {/* distance info w/ icon */}
                 <IconContext.Provider value={{ color: "white" }}>
                     <IoLocationSharp style={{ height: 10, width: 10 }} />
                 </IconContext.Provider>

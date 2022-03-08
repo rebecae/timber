@@ -9,6 +9,7 @@ import Fort from "./places/Fort";
 import Volunteer from "./places/Volunteer";
 import Rattlesnake from "./places/Rattlesnake";
 import Garden from "./places/Garden";
+import Liked from "./Liked";
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Explore />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/liked" element={<Liked />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/paradise" element={<Paradise />} />
         <Route path="/granite-falls" element={<Granite />} />

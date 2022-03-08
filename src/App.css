@@ -1,11 +1,11 @@
 .App {
-  background:#d3b177; 
+  background: #d3b177;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  Overflow-x:scroll;
+  overflow-x: scroll;
 }
 
 /* top header */
@@ -15,15 +15,15 @@
   border-bottom: 2px solid white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   /*padding:0 1rem;*/
-  background: rgb(255,255,255,0.3);
+  background: rgb(255, 255, 255, 0.3);
 }
 
 .logo {
   height: 3rem;
   width: 3rem;
-  background: url('https://lh3.googleusercontent.com/4K_v12knh07w4rW-SCjxkrq6Lsb9014CPvw7tIc_a0TzvxTjKqp6Q4xl3tj0W4iBSuoYyRKF247EbhMe7JaZc6roXARymZE8WEMLO003HgeXY0S4OmCVPbT3xFSltQad5jWzHw3Bdw=w2400');
+  background: url("https://lh3.googleusercontent.com/4K_v12knh07w4rW-SCjxkrq6Lsb9014CPvw7tIc_a0TzvxTjKqp6Q4xl3tj0W4iBSuoYyRKF247EbhMe7JaZc6roXARymZE8WEMLO003HgeXY0S4OmCVPbT3xFSltQad5jWzHw3Bdw=w2400");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,10 +31,39 @@
 }
 
 .title {
-  color: rgb(70, 42, 11);
-  font-weight: 520;
+  /* color: rgb(70, 42, 11); */
+  color: saddlebrown;
+  font-weight: 600;
   font-size: 2.5rem;
-  margin-left: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  margin-left: 3.4rem;
 }
 
+.logo {
+  margin-left: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.heart {
+  margin-right: 2rem;
+}
+
+.earth {
+  margin-right: 2rem;
+}
+
+.calender {
+  margin-right: 0.5rem;
+}

@@ -2,14 +2,12 @@ import React from "react";
 import "../Info.css";
 import { IconContext } from "react-icons";
 import { IoLocationSharp } from "react-icons/io5";
+import Header from "../Header";
 
 function Volunteer() {
   return (
     <div className="App">
-      <header className="header">
-        <span className="title">Timber</span>
-        <div className="logo" />
-      </header>
+      <Header />
 
       <div className="info-content-box">
         <img 

@@ -1,0 +1,52 @@
+.liked-content-box {
+  width: 38rem;
+  height: 50rem;
+  background: rgb(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  /* column-count: 2; */
+  flex-wrap: wrap;
+}
+
+.liked-content-box > h1 {
+  color: saddlebrown;
+}
+
+.info-box {
+  /* display: flex; */
+  column-count: 2;
+  /* flex-direction: column; */
+  /* column-count: 2; */
+}
+
+.box {
+  height: 13rem;
+  width: 17rem;
+  /* background: burlywood; */
+  margin-top: 1rem;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.img-container {
+  position: relative;
+  /* text-align: center; */
+  color: white;
+}
+
+.liked-text {
+  position: absolute;
+  bottom: 1px;
+  left: 16px;
+  margin-left: none;
+}
+
+.liked-dis {
+  font-size: small;
+}

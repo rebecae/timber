@@ -1,12 +1,10 @@
 import React from "react";
+import Header from "./Header";
 
 function Schedule() {
   return(
   <div className="App">
-    <header className='header'> 
-      <span className='title'>Timber</span>
-      <div className='logo' />
-    </header>
+    <Header />
   </div>
   );
 }

@@ -17,7 +17,7 @@ function Liked() {
 
         {/* Clickable location cards, "matches" */}
         <div className="info-box" style={{ columnCount: 2 }}>
-          <Link to="/granite-falls">
+          <Link to="/granite-falls" >
             <LikedGranite />
           </Link>
 

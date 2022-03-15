@@ -1,10 +1,10 @@
 import React from "react";
 import TinderCard from "react-tinder-card";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./TinderCards.css";
 import { IoInformationCircle } from "react-icons/io5";
 import { IoLocationSharp } from "react-icons/io5";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { IconContext } from "react-icons";
 import database from "./db";
 
@@ -14,9 +14,11 @@ function TinderCards() {
 
   // Iterating through firestore database and storing in array
   useEffect(() => {
-    database.collection('places').onSnapshot(snapshot => (
-      setPlace(snapshot.docs.map(doc => doc.data()))
-    ))
+    database
+      .collection("places")
+      .onSnapshot((snapshot) =>
+        setPlace(snapshot.docs.map((doc) => doc.data()))
+      );
     // console.log({places});
   }, []);
 
@@ -37,23 +39,24 @@ function TinderCards() {
               <h3>
                 <span className="place-name">{place.loc}</span>
                 {/* clickable information button */}
-                <button
-                  className="i-button"
-                  onClick={() => {
-                    navigate(`${place.link}`);
-                  }}
-                >
-                  <IconContext.Provider value={{ color: "white", style: { verticalAlign: 'bottom'}}}>
-                    <IoInformationCircle style={{ height: 20, width: 20 }} />
-                  </IconContext.Provider>
-                </button>
+
                 <br />
                 {/* distance info w/ icon */}
                 <IconContext.Provider value={{ color: "white" }}>
-                    <IoLocationSharp style={{ height: 10, width: 10 }} />
+                  <IoLocationSharp style={{ height: 10, width: 10 }} />
                 </IconContext.Provider>
                 <span className="distance">{place.dis} miles away</span>
               </h3>
+              <button
+                className="ti-button"
+                onClick={() => {
+                  navigate(`${place.link}`);
+                }}
+              >
+                <IconContext.Provider value={{ color: "white" }}>
+                  <IoInformationCircle style={{ height: 47, width: 47 }} />
+                </IconContext.Provider>
+              </button>
             </div>
           </TinderCard>
         ))}

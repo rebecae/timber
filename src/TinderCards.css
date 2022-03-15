@@ -42,3 +42,13 @@
 .swipe {
   position: absolute;
 }
+
+.ti-button{
+  position: absolute;
+  bottom: 24px;
+  right: 26px;
+  background: none;
+  border: none;
+  stroke-opacity: 2%;
+  cursor: pointer;
+}

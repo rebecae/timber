@@ -40,8 +40,14 @@
   margin-left: 3.4rem;
 }
 
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .logo {
   margin-left: 2rem;
+
 }
 
 .header {
@@ -66,4 +72,19 @@
 
 .calender {
   margin-right: 0.5rem;
+}
+
+.heart-button {
+  background: none;
+  border: none;
+}
+
+.leaf-button {
+  background: none;
+  border: none;
+}
+
+.calender-button {
+  background: none;
+  border: none;
 }

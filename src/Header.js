@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
 import { IoHeart } from "react-icons/io5";
-import { IoEarth } from "react-icons/io5";
-// import { IoCalendar } from "react-icons/io5";
+import { IoLeaf } from "react-icons/io5";
+import { IoCalendar } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { IconContext } from "react-icons";
+import { Link } from "react-router-dom";
 
 function Header() {
   let navigate = useNavigate();
@@ -17,8 +18,11 @@ function Header() {
       </style>
 
       {/* Timber logo and title */}
+
       <div className="logo">
-        <span className="title">Timber</span>
+        <Link to="/">
+          <span className="title">Timber</span>
+        </Link>
       </div>
 
       {/* Nagivation buttons: earth to explore, heart to liked places */}
@@ -30,7 +34,7 @@ function Header() {
               navigate("/");
             }}
           >
-            <IoEarth style={{ height: 30, width: 30 }} className="earth" />
+            <IoLeaf style={{ height: 30, width: 30 }} className="earth" />
           </button>
 
           <button
@@ -41,10 +45,10 @@ function Header() {
           >
             <IoHeart style={{ height: 30, width: 30 }} className="heart" />
           </button>
-          
+
           {/* button to navigate to scheduling component
           (may not implement) */}
-          {/* <button
+          <button
             className="i-button"
             onClick={() => {
               navigate("/schedule");
@@ -54,7 +58,7 @@ function Header() {
               style={{ height: 30, width: 30 }}
               className="calender"
             />
-          </button> */}
+          </button>
         </IconContext.Provider>
       </div>
     </header>
